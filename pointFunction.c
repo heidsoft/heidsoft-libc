@@ -26,9 +26,9 @@ int compare(int i, int j, int flag)
 	int ret;
 	int (*p)(int,int);//定义函数指针
 	if(flag==GET_MAX)
-		p=get_max;
+		p=get_max; //这个地方只能给函数的名字，而不能带参数
 	else
-		p=get_min;
+		p=get_min; //不能对指向函数的指针做任何运算,如p++,p--,p+n,p-n
 	ret=p(i,j);
 
 	return ret;
@@ -42,3 +42,9 @@ int main(int argc, char *argv[])
 	printf("The Max is %d\n",ret);
 	return 0;
 }
+
+/**********************************************************
+结论:
+int *f(int i,int j); //返回指针的函数，他是一个函数的声明。
+int (*p)(int i,int j); //指向函数的指针，他定义了一个指针。
+***********************************************************/
