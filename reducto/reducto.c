@@ -12,6 +12,7 @@
 
 int main(int argc , char *argv[])
 {
+   printf("this is file yasuo start !\n");
    FILE *in , *out;         //声明两个文件指针
 
    int ch;
@@ -38,9 +39,11 @@ int main(int argc , char *argv[])
      fprintf(stderr,"Can't create output file. \n");
      exit(3);
    }
+   printf("filename is : %s \n",name);
 
    //复制数据
-   while((ch= getc(in) != EOF )){
+   while((ch = getc(in) != EOF )){
+       printf("%c\n",ch);
        if(count++ % 3 == 0){
            printf("%c\n",ch);
            putc(ch,out); //打印每3个字符中的一个
@@ -50,6 +53,6 @@ int main(int argc , char *argv[])
    if(fclose(in) != 0 || fclose(out) != 0 ){
        fprintf(stderr,"Error is closing files \n");
    }
-
+   printf("this is a file yasuo end \n");
    return 0;
 }

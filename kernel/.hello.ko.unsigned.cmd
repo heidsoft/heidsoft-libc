@@ -1,0 +1,1 @@
+cmd_/app/kernel/hello.ko.unsigned := ld -r -m elf_i386 -T /usr/src/kernels/2.6.32-279.14.1.el6.i686/scripts/module-common.lds --build-id -o /app/kernel/hello.ko.unsigned /app/kernel/hello.o /app/kernel/hello.mod.o 
