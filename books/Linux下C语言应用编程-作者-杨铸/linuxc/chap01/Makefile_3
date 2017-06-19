@@ -1,0 +1,10 @@
+OBJS = prog.o code.o
+CC = gcc
+test: ${OBJS}
+	${CC} $^ -o $@
+prog.o: prog.c code.h
+	${CC} -c prog.c -o prog.o
+code.o: code.c code.h
+	${CC} -c code.c -o code.o
+clean:
+	rm -f *.o test
