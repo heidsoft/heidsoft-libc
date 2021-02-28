@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1614505653 source:/home/heidsoft/heidsoft-libc/cached_io_read_file/main.c
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<sys/file.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<string.h>
+
