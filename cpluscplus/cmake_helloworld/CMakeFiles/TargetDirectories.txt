@@ -1,0 +1,3 @@
+/home/heidsoft/heidsoft-libc/cpluscplus/cmake_helloworld/CMakeFiles/rebuild_cache.dir
+/home/heidsoft/heidsoft-libc/cpluscplus/cmake_helloworld/CMakeFiles/edit_cache.dir
+/home/heidsoft/heidsoft-libc/cpluscplus/cmake_helloworld/CMakeFiles/cmake_helloworld.dir
