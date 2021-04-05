@@ -12,7 +12,7 @@ heidsoft
 >https://zhuanlan.zhihu.com/p/98360630
 >https://github.com/spf13/spf13-vim
 >https://www.zhihu.com/question/19989337
-
+>https://vimjc.com/vim-commands-and-vim-mapping-conf.html
 
 # Makefile
 
