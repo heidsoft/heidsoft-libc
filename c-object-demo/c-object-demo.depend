@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1658846876 source:/home/heidsoft/heidsoft-libc/main.c
+	"namedPoint.h"
+	<stdio.h>
+
+1658848889 /home/heidsoft/heidsoft-libc/namedPoint.h
+
+1658848618 source:/home/heidsoft/heidsoft-libc/namedPoint.c
+	"namedPoint.h"
+	<stdlib.h>
+
