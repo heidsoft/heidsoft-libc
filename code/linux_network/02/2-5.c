@@ -11,23 +11,23 @@ main() {
     struct sockaddr_in client;
     socklen_t len;
     int sock;
-    /* ソケットの作成 */
+    /* 0 auto proto */
     sock0 = socket(AF_INET, SOCK_STREAM, 0);
-    /* ソケットの設定 */
+    /* internet */
     addr.sin_family = AF_INET;
     addr.sin_port = htons(12345);
     addr.sin_addr.s_addr = INADDR_ANY;
     bind(sock0, (struct sockaddr*)&addr, sizeof(addr));
-    /* TCPクライアントからの接続要求を待てる状態にする */
+    /* TCP listen */
     listen(sock0, 5);
-    /* TCPクライアントからの接続要求を受け付ける */
+    /* get sock len */
     len = sizeof(client);
     sock = accept(sock0, (struct sockaddr*)&client, &len);
     /* 5文字送信 */
     write(sock, "HELLO", 5);
-    /* TCPセッションの終了 */
+    /* TCP close  */
     close(sock);
-    /* listen するsocketの終了 */
+    /* listen close */
     close(sock0);
     return 0;
 }
