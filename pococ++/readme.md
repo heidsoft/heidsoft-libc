@@ -1,0 +1,7 @@
+PocoFoundation是Poco库的基础部分，它提供了一套用于构建跨平台C++应用程序的基础工具和服务。
+
+PocoFoundation库中包含了一些基础的类和函数，如字符串处理、日期和时间、文件和目录访问、流和网络地址、线程和同步、共享库和类加载等。这些类和函数提供了对操作系统和C++标准库的高级封装，让程序员可以更方便地编写跨平台的代码。
+
+Poco库的其他组件，如PocoNet、PocoUtil等，都依赖于PocoFoundation库。例如，PocoNet库中的网络类使用了PocoFoundation库中的线程和同步功能，PocoUtil库中的应用程序配置和命令行参数解析功能，也使用了PocoFoundation库中的字符串处理和文件访问功能。
+
+因此，如果你在程序中使用了Poco库的任何功能，你通常都需要链接PocoFoundation库。
