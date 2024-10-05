@@ -1,6 +1,6 @@
-heidsoft
-============
-# codelite 
+# linux system dive 
+
+## codelite 
 ```
   sudo apt-get install vim g++ codelite cmake
   sudo apt-get install -y codelite-plugins
@@ -8,29 +8,29 @@ heidsoft
   git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch io/cached_io_write_file/direct_io.data'
 ```
 
-# vim 
+## vim 
 >https://zhuanlan.zhihu.com/p/98360630
 >https://github.com/spf13/spf13-vim
 >https://www.zhihu.com/question/19989337
 >https://vimjc.com/vim-commands-and-vim-mapping-conf.html
 
-# Makefile
+## Makefile
 
 ```
 https://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/
 ```
 
-# io
+## io
 
 ```
 io code
 ```
 
-# kernel
+## kernel
 
 ```
 kernel code
 ```
 
-# 经典项目
+## 经典项目
 - https://github.com/edenhill/kafkacat/blob/master/kafkacat.c
